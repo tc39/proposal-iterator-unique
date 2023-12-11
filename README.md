@@ -45,6 +45,13 @@ let uniques = iter.filter(e => {
 
 Worse, when you want to unique by some applied transform, you need to surround the `filter` with tupling and untupling `map`s.
 
+```js
+let uniques = iter
+  .map(e => [e, f(e)])
+  .filter([, criteria] => { ... })
+  .map(([e]) => e);
+```
+
 ## chosen solution
 
 `Iterator.prototype.uniqBy` which takes an optional mapper.
