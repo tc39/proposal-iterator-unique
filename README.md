@@ -20,7 +20,7 @@ This has a few downsides, though:
 1. Consumes the whole iterator before producing any results.
 1. Doesn't work for infinite iterators.
 1. Yields 0 when the underlying iterator yields -0.
-1. Can't yeild both 0 and -0.
+1. Can't yield both 0 and -0.
 1. Doesn't work for non-iterable iterators.
 
 A better solution is much harder to write and doesn't work well with chaining, as it requires a bunch of side variables for state.
