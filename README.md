@@ -64,12 +64,16 @@ let uniques = iter.uniqBy(obj => obj.field);
 ## design space
 
 * still no good solution for compound keys, but that's an unsolved problem generally
+* mapper? comparator? both? neither?
+  * separate methods or combined with optional params?
+  * would mapper be passed an index?
+* naming: `distinct` is also common
 
 ## prior art
 
 ### other languages
 
-| language | library | simple API | with comparison | with mapping |
+| language | library | simple API | with comparator | with mapping |
 |----------|---------|------------|-----------------|--------------|
 | Clojure | core | `distinct` | -- | -- |
 | Elm | List.Extra | `unique` | -- | `uniqueBy` |
@@ -87,4 +91,12 @@ let uniques = iter.uniqBy(obj => obj.field);
 
 ### JS libraries
 
-TODO
+| library | simple API | with comparator | with mapping |
+|---------|------------|-----------------|--------------|
+| `extra-iterable` | `unique` | `unique` | `unique` |
+| `iter-ops` | `distinct` | -- | `distinct` |
+| `iter-tools` | `distinct` | -- | `distinct` |
+| `itertools-ts` |  `distinct` | -- | `distinct` |
+| Lodash / Underscore | `uniq` | `uniqWith` | `uniqBy` |
+| Ramda | `uniq` | `uniqWith` | `uniqBy` |
+| wu | `unique` | -- | -- |
