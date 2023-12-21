@@ -69,7 +69,21 @@ let uniques = iter.uniqBy(obj => obj.field);
 
 ### other languages
 
-TODO
+| language | library | simple API | with comparison | with mapping |
+|----------|---------|------------|-----------------|--------------|
+| Clojure | core | `distinct` | -- | -- |
+| Elm | List.Extra | `unique` | -- | `uniqueBy` |
+| Haskell | Data.List | `nub` | `nubBy` | -- |
+| Java | Stream | `distinct` | -- | -- |
+| Kotlin | Sequence | `distinct` | -- | `distinctBy` |
+| .NET | System.Linq | `Distinct` | `Distinct`, `DistinctBy` | `DistinctBy` | 
+| PHP | array | `array_unique` | -- | -- |
+| Python | more-itertools | `unique_everseen` | -- | `unique_everseen` |
+| Ruby | Enumerable | `uniq` | -- | `uniq` |
+| Rust | Iterator | -- | -- | -- |
+| Scala | Seq | `distinct` | -- | `distinctBy` |
+| Shell | GNU coreutils | `uniq` | -- | -- |
+| Swift | Sequence | -- | -- | -- |
 
 ### JS libraries
 
