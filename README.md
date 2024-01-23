@@ -101,4 +101,5 @@ let uniques = iter.uniqBy(obj => obj.field);
 | `itertools-ts` |  `distinct` | -- | `distinct` |
 | Lodash / Underscore | `uniq` | `uniqWith` | `uniqBy` |
 | Ramda | `uniq` | `uniqWith` | `uniqBy` |
+| sequency | `distinct` | -- | `distinctBy` |
 | wu | `unique` | -- | -- |
