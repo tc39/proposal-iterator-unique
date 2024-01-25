@@ -65,7 +65,7 @@ let uniques = iter.uniqBy(obj => obj.field);
 
 ## design space
 
-* still no good solution for compound keys, but that's an unsolved problem generally
+* still no good solution for composite keys, but that's an unsolved problem generally
 * mapper? comparator? both? neither?
   * separate methods or combined with optional params?
   * would mapper be passed an index?
