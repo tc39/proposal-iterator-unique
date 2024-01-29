@@ -77,7 +77,6 @@ let uniques = iter.uniqBy(obj => obj.field);
 
 | language | library | simple API | with comparator | with mapping |
 |----------|---------|------------|-----------------|--------------|
-| C++ | &lt;algorithm> | `unique` | `unique` | -- |
 | Clojure | core | `distinct` | -- | -- |
 | Elm | List.Extra | `unique` | -- | `uniqueBy` |
 | Haskell | Data.List | `nub` | `nubBy` | -- |
