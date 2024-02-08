@@ -3,7 +3,7 @@ Iterator Unique
 
 A TC39 proposal to produce an iterator of unique values from any iterator.
 
-**Stage:** 0
+**Stage:** 1
 
 See the [January 2024 presentation to committee](https://docs.google.com/presentation/d/1381O5-rNH72MheHOIiTDfzentOn4APPps3R2MYeLzWY/edit).
 
